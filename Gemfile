@@ -11,9 +11,9 @@ gem 'activesupport', '~>4.2.0'
 gem 'activerecord', '~>4.2.0'
 
 gem 'rake'
-
+  gem 'faker'
 gem 'shotgun', '~>0.9.1'
-
+gem "httparty"
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
@@ -24,6 +24,6 @@ end
 
 group :test, :development do
   gem 'factory_girl'
-  gem 'faker'
+
   gem 'pry-byebug'
 end
