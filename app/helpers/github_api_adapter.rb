@@ -26,7 +26,7 @@ module GitHubApiAdapter
 
     response = http.request(request)
     puts response.read_body
-    p response
+     response
     # return parse_github_return_data(data)
   end
 

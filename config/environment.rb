@@ -17,8 +17,9 @@ require 'logger'
 
 require 'sinatra'
 require "sinatra/reloader" if development?
-
+require 'json'
 require 'erb'
+require 'octokit'
 require 'pry-byebug'
 
 require 'bcrypt'
