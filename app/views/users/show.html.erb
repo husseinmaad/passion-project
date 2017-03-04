@@ -1,9 +1,6 @@
 <!-- User Profile Page -->
 <h2>Hi <%= @user.user_name%>!</h2>
 
-<h2>Your Profile</h2>
+<%if current_user%>
 
-<form id="logout" method="post" action="/logout">
-  <input type="hidden" name="_method" value="delete">
-  <input class="btn btn-primary" type="submit" value="Logout" class="button">
-</form>
+<%end%>
