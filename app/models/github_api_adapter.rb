@@ -25,8 +25,8 @@ module GitHubApiAdapter
     request["postman-token"] = '1b372cee-d5bb-ff13-99ff-da9d9f785222'
 
     response = http.request(request)
-    puts response.read_body
-    p response
+     response.read_body
+     response
     # return parse_github_return_data(data)
   end
 

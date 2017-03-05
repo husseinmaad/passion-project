@@ -7,7 +7,10 @@
 post '/github' do
   # consume data from new form and use github API
    @repos = GitHubApiAdapter.get_github_user_info(params[:user][:user_name])
-   p JSON.parse(@repos.read_body)
-
+   data=  JSON.parse(@repos.read_body)
+   @repo_names = []
+   data.each do |hash|
+      @repo_names << hash["name"]
+   end
    erb :"/github/show.html"
 end
